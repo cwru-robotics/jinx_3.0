@@ -88,9 +88,16 @@ ros_version="noetic"
 
 then save and exit
 
+to activate baxter master:
+``roscd``
+``./baxter.sh``
+
+or you can create an alias in you .bashrc like this:
+``echo "alias baxter_master=~/ros_ws/baxter.sh" >> ~/.bashrc``
+
 # Install Roboteq driver (motor controller):
 
-roscd
-git clone https://github.com/Roboteq-Inc/ROS-Driver.git src/roboteq/ROS-Driver
-source /tmp/usr/local/setup.sh
-catkin_make
+``roscd``
+``git clone https://github.com/Roboteq-Inc/ROS-Driver.git src/roboteq/ROS-Driver``
+``source /tmp/usr/local/setup.sh``
+``catkin_make``
