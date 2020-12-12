@@ -42,13 +42,18 @@ reboot
 ## Phidgets ros packages
 ```
 cd ros_ws/src
-git clone https://github.com/ccny-ros-pkg/phidgets_drivers.git
+git clone -b noetic https://github.com/ros-drivers/phidgets_drivers.git
 git clone https://github.com/ipa320/cob_extern
+
+roscd & catkin_make
 ```
-Remove phidgets_imu and phidgets_ir folders from phidgets driver package
+Copy udev rule to etc/udev/rules.d/:
 ```
-Roscd & catkin_make
-sh src/phidgets_drivers/phidgets_api/share/setup-udev.sh
+roscd phidgets_api
+sudo cp debian/udev /etc/udev/rules.d/99-phidgets.rules
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+
 ```
 Resources:
 - [phidgets_drivers](https://github.com/ccny-ros-pkg/phidgets_drivers)
