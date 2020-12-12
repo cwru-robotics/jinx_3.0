@@ -14,7 +14,7 @@ https://github.com/wsnewman/learning_ros_external_packages
 sudo apt-get install ros-noetic-serial ( does not exist for noetic yet, build it from source https://github.com/wjwwood/serial, you might have to install doxygen from apt)
 
 
-``sudo apt-get install libusb-1.0-0 libusb-1.0-0-dev automake ``
+```sudo apt-get install libusb-1.0-0 libusb-1.0-0-dev automake ```
 
 # Installing Phidget library
 
