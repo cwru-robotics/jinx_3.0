@@ -23,9 +23,9 @@ http://www.phidgets.com/docs/OS_-_Linux
 
 Go into extracted directory 
 
-``./configure ``
-``make ``
-``sudo make install ``
+```./configure ```
+```make ```
+```sudo make install ```
 
 Move udev rules to /etc/udev/rules.d:
 
