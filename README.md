@@ -22,6 +22,7 @@ Download Linux phidgets drivers from here :
 http://www.phidgets.com/docs/OS_-_Linux
 
 Go into extracted directory 
+
 ``./configure ``
 ``make ``
 ``sudo make install ``
@@ -33,8 +34,8 @@ Move udev rules to /etc/udev/rules.d:
 
 
 Add user to dialout group:
-sudo usermod -a -G dialout $USER
-Reboot 
+``sudo usermod -a -G dialout $USER``
+``reboot ``
 
 ## Phidgets ros packages
 cd ros_ws/src
@@ -50,38 +51,39 @@ https://github.com/ipa320/cob_extern
 
 # Installing Sick driver: (tested)
 
-roscd
-git clone https://github.com/ros-drivers/sicktoolbox.git src/sicktoolbox
-git clone https://github.com/ros-drivers/sicktoolbox_wrapper.git src/sicktoolbox_wrapper
-rosdep install sicktoolbox rviz
-rosmake sicktoolbox rviz
+``roscd``
+``git clone https://github.com/ros-drivers/sicktoolbox.git src/sicktoolbox``
+``git clone https://github.com/ros-drivers/sicktoolbox_wrapper.git src/sicktoolbox_wrapper``
+``rosdep install sicktoolbox rviz``
+``rosmake sicktoolbox rviz``
+
 Refer to this tutorial: https://answers.ros.org/question/297938/how-to-install-sicktoolbox-in-kinetic/ 
 
 # Installing baxter: (tested)
 From : https://sdk.rethinkrobotics.com/wiki/Workstation_Setup
 
-sudo apt update 
-sudo apt-get install git-core python3-argparse python3-wstool python3-vcstools python3-rosdep ros-noetic-control-msgs ros-noetic-joystick-drivers
+``sudo apt update ``
+``sudo apt-get install git-core python3-argparse python3-wstool python3-vcstools python3-rosdep ros-noetic-control-msgs ros-noetic-joystick-drivers``
 
-cd ~/ros_ws/src
-wstool init .
-wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter/master/baxter_sdk.rosinstall
-wstool update
-roscd
-catkin make
+``cd ~/ros_ws/src``
+``wstool init .``
+``wstool merge https://raw.githubusercontent.com/RethinkRobotics/baxter/master/baxter_sdk.rosinstall``
+``wstool update``
+``roscd``
+``catkin make``
  (I removed cfg/HeadActionServer.cfg from Cmakelist of baxter_interface folder duo to compiling error)
 
-roscd
-wget https://github.com/RethinkRobotics/baxter/raw/master/baxter.sh
-chmod u+x baxter.sh
+``roscd``
+``wget https://github.com/RethinkRobotics/baxter/raw/master/baxter.sh``
+``chmod u+x baxter.sh``
 
 #edit baxter.sh: change baxter name and ros_ip addresss:
 
 code baxter.sh &
 
-changes:
-baxter_hostname="129.22.149.130"
-your_ip="129.22.148.227"  # get from ifconfig 
+Change the following lines in baxter .sh:
+baxter_hostname="baxter01" #or baxter IP which is: "129.22.143.164"
+your_ip="jinx"  #or ip address from ifconfig 
 ros_version="noetic"
 
 then save and exit
