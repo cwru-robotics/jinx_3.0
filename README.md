@@ -118,6 +118,12 @@ or you can create an alias in you .bashrc like this:
 ```
 echo "alias baxter_master=~/ros_ws/baxter.sh" >> ~/.bashrc
 ```
+## Update: baxter incompatable with python 3
+Baxter packages are still incompatable with python 3. I had to replace my baxter_tools and baxter_interface packages with modified packages that support python 3:
+
+- https://github.com/CentraleNantesRobotics/baxter_interface
+- https://github.com/CentraleNantesRobotics/baxter_tools.git
+
 
 # Install Roboteq driver (motor controller):
 
