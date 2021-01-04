@@ -133,3 +133,5 @@ git clone https://github.com/Roboteq-Inc/ROS-Driver.git src/roboteq/ROS-Driver
 source /tmp/usr/local/setup.sh
 catkin_make
 ```
+reference: https://github.com/Roboteq-Inc/ROS-Driver/tree/update_serial/ROS-Driver-Update
+
