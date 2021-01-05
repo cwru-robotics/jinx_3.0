@@ -135,3 +135,13 @@ catkin_make
 ```
 reference: https://github.com/Roboteq-Inc/ROS-Driver/tree/update_serial/ROS-Driver-Update
 
+# Kinect driver installation (tested)
+```
+sudo apt install ros-noetic-openni2-camera ros-noetic-openni2-launch ros-noetic-openni2-camera-dbgsym 
+cd ~/ros_ws/src
+git clone https://github.com/ros-drivers/openni_camera.git
+cd ~/ros_ws
+catkin make
+```
+For launching kinect and observing the pointcloud, refer to openni_launch wki page:
+https://wiki.ros.org/openni_launch
