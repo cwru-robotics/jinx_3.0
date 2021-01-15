@@ -145,3 +145,28 @@ catkin make
 ```
 For launching kinect and observing the pointcloud, refer to openni_launch wki page:
 https://wiki.ros.org/openni_launch
+
+# STDR_Simulator
+First install qt4 and make it default
+```
+sudo add-apt-repository ppa:rock-core/qt4
+sudo apt-get update
+sudo apt-get install libqtcore4
+export QT_SELECT=4
+```
+make sure it is the active environment by running
+```
+qtchooser -print-env
+```
+then install the map_server
+```
+sudo apt install ros-noetic-map-server
+```
+Then clone and compile the stdr_simulator package
+```
+cd ~/ros_ws/src
+git clone https://github.com/stdr-simulator-ros-pkg/stdr_simulator.git
+cd ..
+rosdep install --from-paths src --ignore-src --rosdistro noetic
+catkin_make -DQT_QMAKE_EXECUTABLE=/usr/bin/qmake-qt4
+```
