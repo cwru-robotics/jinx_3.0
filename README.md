@@ -146,7 +146,7 @@ catkin make
 For launching kinect and observing the pointcloud, refer to openni_launch wki page:
 https://wiki.ros.org/openni_launch
 
-# STDR_Simulator
+# STDR_Simulator (tested)
 First install qt4 and make it default
 ```
 sudo add-apt-repository ppa:rock-core/qt4
