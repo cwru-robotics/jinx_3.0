@@ -3,7 +3,7 @@ jinx repositories in ubuntu 20.04 and ros Noetic
 
 These are some steps required to get the Jinx PC up and running from a fresh Ubuntu installation. These were tested with ROS Noetic and Ubuntu 20.04. 
 
-# Install ros noetic:
+# Install ros noetic (tested :+1:) 
 
 Install ros and setup the work space :
 https://github.com/wsnewman/learning_ros_setup_scripts/blob/master/install_ros_and_tools_noetic.sh
@@ -60,7 +60,7 @@ Resources:
 - [cob_extern](https://github.com/ipa320/cob_extern)
 
 
-# Installing Sick driver: (tested)
+# Installing Sick driver: (tested :+1:) 
 
 ```
 roscd
@@ -72,7 +72,7 @@ rosmake sicktoolbox rviz
 
 Refer to this tutorial: [how-to-install-sicktoolbox-in-kinetic](https://answers.ros.org/question/297938/how-to-install-sicktoolbox-in-kinetic/ )
 
-# Installing baxter: (tested)
+# Installing baxter: (tested :+1:) 
 From : https://sdk.rethinkrobotics.com/wiki/Workstation_Setup
 
 ```
@@ -135,7 +135,7 @@ catkin_make
 ```
 reference: https://github.com/Roboteq-Inc/ROS-Driver/tree/update_serial/ROS-Driver-Update
 
-# Kinect driver installation (tested)
+# Kinect driver installation (tested :+1:) 
 ```
 sudo apt install ros-noetic-openni2-camera ros-noetic-openni2-launch ros-noetic-openni2-camera-dbgsym 
 cd ~/ros_ws/src
@@ -146,7 +146,7 @@ catkin make
 For launching kinect and observing the pointcloud, refer to openni_launch wki page:
 https://wiki.ros.org/openni_launch
 
-# STDR_Simulator (tested)
+# STDR_Simulator (tested :+1:) 
 First install qt4 and make it default
 ```
 sudo add-apt-repository ppa:rock-core/qt4
