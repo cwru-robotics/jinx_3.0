@@ -1,5 +1,5 @@
 # Jinx 3.0
-jinx repositories in ubuntu 20.04 and ros Noetic
+jinx 3.0 repositories in ubuntu 20.04 and ros Noetic
 
 # installation 
 Refer to https://github.com/cwru-robotics/jinx_3.0/blob/master/DOC/Installation_instructions.md
