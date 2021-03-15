@@ -1,5 +1,4 @@
-# Jinx 3.0
-jinx repositories in ubuntu 20.04 and ros Noetic
+# Installing Jinx
 
 These are some steps required to get the Jinx PC up and running from a fresh Ubuntu installation. These were tested with ROS Noetic and Ubuntu 20.04. 
 
